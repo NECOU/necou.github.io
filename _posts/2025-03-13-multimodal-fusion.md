@@ -18,7 +18,7 @@ When a VLM and LLM share the same base architecture (e.g., Qwen2.5-VL-7B and Qwe
 
 Conventional approaches to model merging include techniques like parameter averaging, task arithmetic, and adapter fusion. However, these methods often treat all parameters equally or focus on task-specific adaptation. Our research investigates a more nuanced approach based on how different components of these models process multimodal information.
 
-![Layer Weights Distribution](_figs/p0/5.layer_weights_distribution.png)
+![Layer Weights Distribution](/_posts/_figs/p0/5.layer_weights_distribution.png)
 *Figure 1: Illustration of the three different weight distribution strategies across model layers. Method 1 applies a constant weight, while Methods 2 and 3 progressively increase LLM influence in deeper layers.*
 
 ## Research Hypotheses
