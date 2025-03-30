@@ -1,0 +1,15 @@
+
+{% if page.authors %}
+<div class="post-authors">
+  <span class="author-label">Contributors: </span>
+  {% for author in page.authors %}
+    <span class="author">
+      {% if author.url %}
+        <a href="{{ author.url }}" target="_blank" rel="noopener">{{ author.name }}</a>
+      {% else %}
+        {{ author.name }}
+      {% endif %}
+    </span>{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+</div>
+{% endif %}
