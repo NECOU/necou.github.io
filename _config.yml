@@ -1,0 +1,42 @@
+title: A Bit of A and I
+description: Our blog where we share our research and projects.
+url: "https://necou.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+remote_theme: jekyll/minima
+
+# Minima theme settings
+minima:
+  date_format: "%b %-d, %Y"
+  social_links:
+    github: NECOU
+    other:
+      - platform: huggingface
+        user_url: "https://huggingface.co/NECOUDBFM/Jellyfish"
+        title: Hugging Face
+
+# Defaults for posts
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "NECOU Team"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
