@@ -4,8 +4,6 @@ title: "Optimizing Multimodal Fusion: Selective Parameter Merging between Vision
 date: 2025-3-13
 categories: research
 ---
-# Optimizing Multimodal Fusion: Selective Parameter Merging between Vision-Language and Language Models
-
 ## Key Findings
 
 In our exploration of merging Vision-Language Models (VLMs) with traditional Language Models (LLMs), we've uncovered fascinating insights that challenge conventional wisdom about model fusion. Rather than indiscriminately combining all parameters from both models, we found that a more nuanced, selective approach yields dramatically better results. The most effective strategy preserves the VLM's original embedding layers while only merging the self-attention mechanisms—a finding that aligns with our understanding of how these models process visual information.
