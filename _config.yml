@@ -17,6 +17,11 @@ minima:
         user_url: "https://huggingface.co/NECOUDBFM/Jellyfish"
         title: Hugging Face
 
+# Author settings
+author_info:
+  NECOU Team:
+    url: "https://abc.com"
+
 # Defaults for posts
 defaults:
   -
