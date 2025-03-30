@@ -6,6 +6,8 @@ baseurl: ""
 # Build settings
 markdown: kramdown
 remote_theme: jekyll/minima
+kramdown:
+  math_engine: mathjax
 
 # Minima theme settings
 minima:
