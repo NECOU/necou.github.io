@@ -1,0 +1,29 @@
+{% comment %}
+  This file provides an easy way to add custom code to the head element without 
+  modifying the main theme's files.
+{% endcomment %}
+
+<script type="text/javascript">
+  // This script runs after the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find the post-meta element which contains the author name
+    var postMeta = document.querySelector('.post-meta');
+    
+    if (postMeta) {
+      // Regular expression to find the author part
+      var authorText = postMeta.innerHTML;
+      var authorName = '{{ site.author.name }}';
+      var authorUrl = '{{ site.author.url }}';
+      
+      // Only replace if the author name is found and URL exists
+      if (authorName && authorUrl && authorText.includes(authorName)) {
+        // Replace plain text with linked version
+        authorText = authorText.replace(
+          authorName, 
+          '<span class="author-link"><a href="' + authorUrl + '">' + authorName + '</a></span>'
+        );
+        postMeta.innerHTML = authorText;
+      }
+    }
+  });
+</script>

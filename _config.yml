@@ -18,9 +18,9 @@ minima:
         title: Hugging Face
 
 # Author settings
-author_info:
-  NECOU Team:
-    url: "https://abc.com"
+author:
+  name: "NECOU Team"
+  url: "https://abc.com"
 
 # Defaults for posts
 defaults:

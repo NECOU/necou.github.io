@@ -1,0 +1,7 @@
+{% if page.author %}
+  {% if site.author.name == page.author and site.author.url %}
+    <a href="{{ site.author.url }}">{{ page.author }}</a>
+  {% else %}
+    {{ page.author }}
+  {% endif %}
+{% endif %}
