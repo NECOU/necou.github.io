@@ -50,9 +50,9 @@ We explored three different strategies for determining the merging weights:
 - **Method 3**: Loglinear Layer-wise Progressive Merging - increasing the LLM's influence on a logarithmic scale across layers
 
 ### Weight Notation
-For our experiments, we used a standard interpolation formula for model merging:
+For our experiments, we used a standard interpolation formula for model merging:  
 
-$$(1-\\alpha)\\theta_\\text{VLM} + \\alpha\\theta_\\text{LLM} = \\theta_\\text{Merged VLM}$$
+![ ](/assets/images/p0/0.equation.png)
 
 Where α represents the weight given to the LLM parameters:
 - α = 0.4: 60% VLM + 40% LLM influence

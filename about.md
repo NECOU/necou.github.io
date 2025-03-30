@@ -10,7 +10,3 @@ We are researchers focused on advancing AI through innovative techniques and app
 
 Check out our work on Hugging Face:
 - [Jellyfish](https://huggingface.co/NECOUDBFM/Jellyfish)
-
-## Contact
-
-Feel free to reach out through [GitHub](https://github.com/NECOU) for collaborations or questions.

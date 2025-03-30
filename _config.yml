@@ -5,10 +5,8 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
+remote_theme: jekyll/minima
 
-kramdown:
-  math_engine: mathjax
-theme: minima
 # Minima theme settings
 minima:
   date_format: "%b %-d, %Y"
