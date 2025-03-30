@@ -52,7 +52,7 @@ We explored three different strategies for determining the merging weights:
 ### Weight Notation
 For our experiments, we used a standard interpolation formula for model merging:
 
-$(1-\alpha)\theta_\text{VLM} + \alpha\theta_\text{LLM} = \theta_\text{Merged VLM}$
+$$(1-\alpha)\theta_\text{VLM} + \alpha\theta_\text{LLM} = \theta_\text{Merged VLM}$$
 
 Where α represents the weight given to the LLM parameters:
 - α = 0.4: 60% VLM + 40% LLM influence
