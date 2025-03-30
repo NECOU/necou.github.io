@@ -3,6 +3,7 @@ layout: post
 title: "Optimizing Multimodal Fusion: Selective Parameter Merging between Vision-Language and Language Models"
 date: 2025-3-13
 categories: research
+mathjax: true
 ---
 ## Key Findings
 
