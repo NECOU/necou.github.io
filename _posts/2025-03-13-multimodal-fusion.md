@@ -18,7 +18,7 @@ When a VLM and LLM share the same base architecture (e.g., Qwen2.5-VL-7B and Qwe
 
 Conventional approaches to model merging include techniques like parameter averaging, task arithmetic, and adapter fusion. However, these methods often treat all parameters equally or focus on task-specific adaptation. Our research investigates a more nuanced approach based on how different components of these models process multimodal information.
 
-![Layer Weights Distribution](/_posts/_figs/p0/5.layer_weights_distribution.png)
+![Layer Weights Distribution](/assets/images/p0/5.layer_weights_distribution.png)
 *Figure 1: Illustration of the three different weight distribution strategies across model layers. Method 1 applies a constant weight, while Methods 2 and 3 progressively increase LLM influence in deeper layers.*
 
 ## Research Hypotheses
@@ -67,19 +67,19 @@ This formula is applied to the respective tensors being merged. For example, wit
 
 Our experiments revealed several key patterns across different configurations of settings, methods, and weight ratios:
 
-![Performance Heatmap](/_posts/_figs/p0/4.performance_heatmap.png)
+![Performance Heatmap](/assets/images/p0/4.performance_heatmap.png)
 *Figure 2: Heatmap visualization of performance across all experimental configurations. The color intensity represents accuracy, with darker blues indicating higher performance.*
 
 ### Hypothesis 1: Selective Component Fusion
 
 Setting 2 (self-attention only) consistently outperformed Setting 1 (all tensors) across most method and weight combinations, with particularly strong improvements on the Math-Vista mini dataset.
 
-![Settings Comparison](/_posts/_figs/p0/1.settings_comparison.png)
+![Settings Comparison](/assets/images/p0/1.settings_comparison.png)
 *Figure 3: Direct comparison of Setting 1 vs Setting 2 across different method-weight combinations. Setting 2 generally achieves higher accuracy, especially on the Math-Vista mini dataset.*
 
 The improvement is especially clear when we look at the direct performance delta between Settings 2 and 1:
 
-![Delta Improvement](/_posts/_figs/p0/2.delta_improvement.png)
+![Delta Improvement](/assets/images/p0/2.delta_improvement.png)
 *Figure 4: Performance improvement of Setting 2 over Setting 1 for each configuration. Positive values (blue) indicate where Setting 2 outperforms Setting 1.*
 
 As shown in Figure 4, Setting 2 outperforms Setting 1 in 16 out of 18 comparisons across both datasets. For MATH-V, Setting 2 shows improvements in 7 out of 9 cases with an average improvement of 0.94 percentage points overall. The improvement is particularly strong and consistent for Math-Vista mini, where Setting 2 outperforms Setting 1 in all 9 comparisons with an average gain of 3.93 percentage points.
@@ -90,7 +90,7 @@ This strongly supports our first hypothesis that preserving the VLM's embedding 
 
 Our second hypothesis predicted that layer-wise increasing methods (Methods 2 and 3) would outperform global weight fusion (Method 1). The results show substantial support for this hypothesis, with a 79.2% success rate across all configurations and datasets:
 
-![Methods by Weight](/_posts/_figs/p0/3.methods_by_weight.png)
+![Methods by Weight](/assets/images/p0/3.methods_by_weight.png)
 *Figure 5: Performance trends across different weight values for each method. Methods 2 and 3 often outperform Method 1 and show more graceful degradation at higher weights.*
 
 The advantage of layer-wise methods is even more pronounced in Setting 2 (the more effective setting overall), with an 83.3% success rate. This trend is particularly notable at higher LLM weight values (0.5 and 0.6), where Methods 2 and 3 consistently outperform Method 1 across both datasets.
