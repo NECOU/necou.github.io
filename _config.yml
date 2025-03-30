@@ -26,6 +26,7 @@ defaults:
     values:
       layout: "post"
       author: "NECOU Team"
+      author_url: "123.com"
 
 # Plugins
 plugins:
