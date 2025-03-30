@@ -1,52 +1,49 @@
 # A Bit of A and I
 
-Our blog where we share our research and projects.
+Our blog where we share our research and projects in AI.
 
-## About
+## About This Repository
 
-This repository contains the source code for our blog "A Bit of A and I", hosted on GitHub Pages. Visit our blog at [https://necou.github.io](https://necou.github.io).
+This repository contains the source for our Jekyll-based blog hosted on GitHub Pages.
+Visit our blog at [https://necou.github.io](https://necou.github.io).
 
 ## Blog Structure
 
-The blog is organized as follows:
+- `_config.yml`: Jekyll configuration file
+- `_posts/`: Directory containing all blog posts in Markdown format
+- `index.md`: Home page
+- `about.md`: About page
 
-- `index.html`: The home page of the blog
-- `styles.css`: Main stylesheet for the blog
-- `posts/`: Directory containing all blog posts
-  - `multimodal-fusion.html`: Our first blog post on optimizing multimodal fusion
+## Writing a New Post
 
-## Adding a New Blog Post
-
-To add a new blog post:
-
-1. Create a new HTML file in the `posts/` directory with a descriptive name (e.g., `new-research-topic.html`)
-2. Copy the structure from an existing blog post template
-3. Update the content with your new blog post
-4. Add a preview of the new post to `index.html` by adding a new `<article class="post-preview">` element
-
-Example of a new post preview to add to `index.html`:
-
-```html
-<article class="post-preview">
-    <h2><a href="posts/new-research-topic.html">Title of Your New Blog Post</a></h2>
-    <div class="post-meta">
-        <span class="post-date">Publication Date</span>
-    </div>
-    <p class="post-excerpt">
-        A brief excerpt or summary of your new blog post.
-    </p>
-    <a href="posts/new-research-topic.html" class="read-more">Read More</a>
-</article>
+1. Create a new Markdown file in the `_posts` directory with the naming convention: `YYYY-MM-DD-title-with-hyphens.md`
+2. Add the YAML front matter at the top of your file:
+```yaml
+---
+layout: post
+title: "Your Post Title Here"
+date: YYYY-MM-DD
+categories: research
+---
 ```
+3. Write your content in Markdown format
+4. Commit and push to GitHub
 
-## Development
+## Local Development
 
-To test the blog locally before pushing changes:
+To test your blog locally:
 
-1. Clone the repository
-2. Open the `index.html` file in your browser
-3. Make your changes
-4. Refresh the browser to see the changes
+1. Install Ruby and Jekyll: `gem install jekyll bundler`
+2. Clone this repository
+3. Run `bundle install`
+4. Start the local server: `bundle exec jekyll serve`
+5. View your site at `http://localhost:4000`
+
+## Resources
+
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [Markdown Guide](https://www.markdownguide.org/)
 
 ## Links
 
