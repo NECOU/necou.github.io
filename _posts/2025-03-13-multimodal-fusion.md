@@ -3,12 +3,7 @@ layout: post
 title: "Optimizing Multimodal Fusion: Selective Parameter Merging between Vision-Language and Language Models"
 date: 2025-3-13
 categories: research
-authors:
-  - name: Haochen Zhang
-  - name: Yuyang Dong
-    url: https://dongyuyang.github.io/
-  - name: Chuan Xiao
-    url: https://sites.google.com/site/chuanxiao1983/
+author: 123
 ---
 ## Key Findings
 
