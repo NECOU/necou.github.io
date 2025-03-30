@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizing Multimodal Fusion - A Bit of A and I</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Add any additional styles or scripts needed for your blog post here -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>A Bit of A and I</h1>
+            <p class="description">Our blog where we share our research and projects.</p>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://huggingface.co/NECOUDBFM/Jellyfish" target="_blank">Our Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <header class="post-header">
+                <h1 class="post-title">Optimizing Multimodal Fusion: Selective Parameter Merging between Vision-Language and Language Models</h1>
+                <div class="post-meta-full">
+                    <span class="post-date">March 30, 2025</span>
+                    <!-- Add author information or other metadata if needed -->
+                </div>
+            </header>
+
+            <div class="post-content">
+                <!-- 
+                    This is where you'll add your blog post content. 
+                    You mentioned you'll add the content yourself.
+                    
+                    Here's a simple structure to follow:
+                    
+                    <h2>Introduction</h2>
+                    <p>Your introduction text here...</p>
+                    
+                    <h2>Background</h2>
+                    <p>Background information...</p>
+                    
+                    <h2>Methodology</h2>
+                    <p>Explanation of methodology...</p>
+                    
+                    <h2>Results</h2>
+                    <p>Discussion of results...</p>
+                    
+                    <h2>Conclusion</h2>
+                    <p>Concluding remarks...</p>
+                    
+                    <h2>References</h2>
+                    <ul>
+                        <li>Reference 1</li>
+                        <li>Reference 2</li>
+                    </ul>
+                -->
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 A Bit of A and I</p>
+            <div class="social-links">
+                <a href="https://github.com/NECOU" target="_blank">GitHub</a>
+                <a href="https://huggingface.co/NECOUDBFM/Jellyfish" target="_blank">Hugging Face</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
